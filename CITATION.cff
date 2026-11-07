@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "Multi-Label Medical Concept Recognition using Asymmetric Loss-Driven EfficientNet: Analyzing the Detection of Rare Concepts Under Long-Tailed Imbalance"
+authors:
+  - family-names: "Yürük"
+    given-names: "Mehmet Aytuğ"
+    affiliation: "Istanbul University"
+  - family-names: "Memiş"
+    given-names: "Abbas"
+    affiliation: "Istanbul University"
+doi: "10.1007/978-3-032-37739-5_24"
+year: 2027
+repository-code: "https://github.com/mehmetaytugyuruk/roco-v2-loss-functions"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Multi-Label Medical Concept Recognition using Asymmetric Loss-Driven EfficientNet: Analyzing the Detection of Rare Concepts Under Long-Tailed Imbalance"
+  authors:
+    - family-names: "Yürük"
+      given-names: "Mehmet Aytuğ"
+    - family-names: "Memiş"
+      given-names: "Abbas"
+  year: 2027
+  collection-title: "IFMBE Proceedings"
+  volume: 145
+  start: 313
+  end: 328
+  publisher:
+    name: "Springer"
+  doi: "10.1007/978-3-032-37739-5_24"

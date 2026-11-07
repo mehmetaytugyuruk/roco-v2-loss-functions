@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Multi-label medical concept recognition using asymmetric loss on the long-tailed ROCOv2 radiology dataset.">
+    <meta name="theme-color" content="#ffffff">
+    <title>Multi-Label Medical Concept Recognition using Asymmetric Loss-Driven EfficientNet: Analyzing the Detection of Rare Concepts Under Long-Tailed Imbalance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/site.css?v=20261031-stable-mobile-viewport">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <main id="main-content">
+      <section class="publication-hero" aria-label="Paper overview">
+        <header class="publication-header container">
+          <h1>Multi-Label Medical Concept Recognition using Asymmetric Loss-Driven EfficientNet: Analyzing the Detection of Rare Concepts Under Long-Tailed Imbalance</h1>
+          <div class="publication-authors">
+            <span class="author">Mehmet Aytuğ Yürük<sup>1</sup></span>,
+            <span class="author">Abbas Memiş<sup>2</sup></span>
+          </div>
+          <div class="publication-affiliations">
+            <span><sup>1</sup>Department of Artificial Intelligence and Data Engineering, İstanbul University</span>
+            <span><sup>2</sup>Department of Computer Engineering, İstanbul University</span>
+          </div>
+          <nav class="publication-links" aria-label="Project resources">
+            <a class="resource-link" href="https://github.com/mehmetaytugyuruk/roco-v2-loss-functions" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.12.68-3.78-1.32-3.78-1.32-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 .1.69 2.5 3.26 1.13.1-.72.39-1.21.71-1.49-2.49-.28-5.1-1.25-5.1-5.54 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.08 1.15a10.7 10.7 0 0 1 5.6 0c2.14-1.45 3.07-1.15 3.07-1.15.62 1.53.23 2.67.12 2.95.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.26-5.12 5.54.4.35.76 1.03.76 2.08v2.88c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z"/></svg><span>Code</span></a>
+            <a class="resource-link" href="https://doi.org/10.1007/978-3-032-37739-5_24" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h7l4 4v12A1.5 1.5 0 0 1 16.5 21h-9A1.5 1.5 0 0 1 6 19.5v-14A2 2 0 0 1 7 3.5Z"/><path d="M14 3.5v4h4M8.5 12h7M8.5 16h7"/></svg><span>Paper</span></a>
+            <a class="resource-link" href="https://doi.org/10.5281/zenodo.10821435" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 8h8M8 12h8M8 16h8"/></svg><span>Dataset</span></a>
+          </nav>
+        </header>
+
+        <section class="figure-section container" aria-label="ROCOv2 radiology images and concepts">
+          <figure>
+            <img src="assets/images/roco-v2-concepts.webp" alt="Examples of ROCOv2 radiology images with their associated medical concepts.">
+          </figure>
+        </section>
+      </section>
+
+      <section class="section shaded" id="abstract" aria-labelledby="abstract-title">
+        <div class="container container-narrow">
+          <h2 id="abstract-title">Abstract</h2>
+          <p class="abstract-text">Multi-label concept recognition from radiology images is challenging due to the large label space and severe long-tailed class imbalance. This study examines the effects of some specific loss functions and their multiple configurations for multi-label concept recognition on ROCOv2, a long-tailed radiology dataset consisting of 79,789 images annotated with 1,947 UMLS (Unified Medical Language System) concepts. To this end, we conduct a three-phase empirical study. The first phase evaluates two base loss functions, Binary Cross-Entropy (BCE) and Asymmetric Loss (ASL), using the EfficientNet-B0 backbone. The second phase investigates the effect of different ASL hyperparameter settings under increased model capacity with EfficientNet-B4. Finally, the third phase analyzes hybrid loss formulations that combine BCE and ASL under the same network settings. In the experiments, promising concept recognition rates were achieved with ASL. ASL improves the overall concept recognition performance score from 0.5809 (BCE baseline) to 0.5882 on the EfficientNet-B0 backbone and to 0.5916 on the EfficientNet-B4 backbone. Although this increase in the overall score may seem modest, the local increases in specific classes are even stronger. In addition, hybrid and other variants were evaluated and it was observed that they do not provide further gains over the best ASL-only configuration.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
