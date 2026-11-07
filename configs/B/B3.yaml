@@ -1,0 +1,43 @@
+model_name: efficientnet_b4
+num_classes: 1947
+image_size: 384
+batch_size: 64
+eval_batch_size: 64
+epochs: 10
+lr: 0.0003
+weight_decay: 0.0001
+warmup_epochs: 1
+min_lr: 1.0e-06
+grad_clip: 1.0
+num_workers: 4
+num_workers_if_supported: 6
+colab_safe_num_workers: 2
+seed: 42
+amp: true
+pin_memory: true
+pretrained: true
+device: auto
+color_jitter_probability: 0.5
+max_labels_per_image: 100
+auto_extract_data_zip: false
+progress_bar: true
+loss_type: asl
+loss_kwargs:
+  gamma_neg: 4.0
+  gamma_pos: 0.0
+  clip: 0.10
+sampling_strategy: random
+max_train_samples: null
+max_valid_samples: null
+max_test_samples: null
+paths:
+  annotations_dir: data/annotations
+  images_dir: data/images
+  data_zip: ''
+output_dir: runs/B/B3
+outputs:
+  best_model: best_model.pth
+  last_model: last_model.pth
+  train_log: train_log.csv
+  val_probabilities: val_probabilities.csv
+  test_probabilities: test_probabilities.csv
